@@ -1,0 +1,120 @@
+:root {
+  --bg: #f6f1eb;
+  --text: #333;
+  --accent-rosa: #f8c5cf;
+  --accent-lila: #c9b6e4;
+  --accent-lila-darker: #8364ae;
+  --accent-gul: #f4e4b5;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profilbild {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 3px solid var(--accent-lila);
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.intro p {
+  max-width: 800px;
+  margin: 0 auto 1.2rem;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  color: var(--text);
+}
+
+.portfolio {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.portfolio ul {
+  list-style: none;
+  padding: 0;
+}
+
+.portfolio a {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.7rem 1.2rem;
+  background-color: var(--accent-rosa);
+  color: #000;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.portfolio a:hover {
+  background-color: var(--accent-lila);
+}
+
+.portfolio h3 {
+  margin-top: 2rem;
+  color: var(--accent-lila-darker);
+  font-weight: 600;
+}
+
+.kontakt {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+footer a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: bold;
+}
+.design-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.design-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.design-gallery img:hover {
+  transform: scale(1.02);
+}
+
+.intro {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro p {
+  font-size: 1rem;
+  color: #666;
+}
